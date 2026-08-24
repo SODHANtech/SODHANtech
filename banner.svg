@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 150" width="100%">
+  <!-- Background -->
+  <rect width="800" height="150" fill="#090d16" />
+  
+  <!-- Premium Thin Grid System -->
+  <g stroke="#161f30" stroke-width="0.75" opacity="0.6">
+    <line x1="0" y1="30" x2="800" y2="30" />
+    <line x1="0" y1="75" x2="800" y2="75" />
+    <line x1="0" y1="120" x2="800" y2="120" />
+    <line x1="80" y1="0" x2="80" y2="150" />
+    <line x1="240" y1="0" x2="240" y2="150" />
+    <line x1="560" y1="0" x2="560" y2="150" />
+    <line x1="720" y1="0" x2="720" y2="150" />
+  </g>
+
+  <!-- Fine tick marks at the borders (Engineering scale) -->
+  <g stroke="#00d2ff" stroke-width="1" opacity="0.4">
+    <!-- Top ticks -->
+    <line x1="40" y1="0" x2="40" y2="5" />
+    <line x1="120" y1="0" x2="120" y2="5" />
+    <line x1="200" y1="0" x2="200" y2="5" />
+    <line x1="280" y1="0" x2="280" y2="5" />
+    <line x1="360" y1="0" x2="360" y2="5" />
+    <line x1="440" y1="0" x2="440" y2="5" />
+    <line x1="520" y1="0" x2="520" y2="5" />
+    <line x1="600" y1="0" x2="600" y2="5" />
+    <line x1="680" y1="0" x2="680" y2="5" />
+    <line x1="760" y1="0" x2="760" y2="5" />
+    <!-- Bottom ticks -->
+    <line x1="40" y1="145" x2="40" y2="150" />
+    <line x1="120" y1="145" x2="120" y2="150" />
+    <line x1="200" y1="145" x2="200" y2="150" />
+    <line x1="280" y1="145" x2="280" y2="150" />
+    <line x1="360" y1="145" x2="360" y2="150" />
+    <line x1="440" y1="145" x2="440" y2="150" />
+    <line x1="520" y1="145" x2="520" y2="150" />
+    <line x1="600" y1="145" x2="600" y2="150" />
+    <line x1="680" y1="145" x2="680" y2="150" />
+    <line x1="760" y1="145" x2="760" y2="150" />
+  </g>
+
+  <!-- Clean Framing Lines -->
+  <line x1="20" y1="15" x2="780" y2="15" stroke="#00d2ff" stroke-width="1" opacity="0.3" />
+  <line x1="20" y1="135" x2="780" y2="135" stroke="#00d2ff" stroke-width="1" opacity="0.3" />
+  
+  <g stroke="#00d2ff" stroke-width="1.5" fill="none">
+    <!-- Top-left corner frame -->
+    <path d="M 20 30 L 20 15 L 50 15" />
+    <!-- Bottom-right corner frame -->
+    <path d="M 780 120 L 780 135 L 750 135" />
+  </g>
+
+  <!-- Typography -->
+  <style>
+    .brand-name {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      fill: #ffffff;
+      letter-spacing: 5px;
+    }
+    .brand-sub {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 10px;
+      fill: #00d2ff;
+      letter-spacing: 3px;
+    }
+    .tech-labels {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 9px;
+      fill: #5d7290;
+      letter-spacing: 1px;
+    }
+    .status-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 10px;
+      fill: #8ca3c2;
+    }
+    .status-highlight {
+      fill: #e5a93c;
+      font-weight: bold;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 0.8; }
+      100% { opacity: 0.3; }
+    }
+    .active-dot {
+      fill: #00ff66;
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Brand Block (Center-Left) -->
+  <g transform="translate(45, 62)">
+    <text class="brand-name">SODHANtech</text>
+    <text class="brand-sub" x="3" y="25">ELECTRICAL &amp; SYSTEMS ARCHITECTURE</text>
+    <text class="tech-labels" x="3" y="40">SOFTWARE DESIGN • DIGITAL SYSTEMS • EMBEDDED COMPUTING</text>
+  </g>
+
+  <!-- Status Dashboard (Right Side) -->
+  <g transform="translate(580, 50)">
+    <!-- Thin enclosure -->
+    <rect x="-10" y="-12" width="180" height="75" fill="#0c1220" stroke="#1c2b45" stroke-width="1" rx="2" />
+    <circle class="active-dot" cx="155" cy="5" r="3" />
+    
+    <text class="status-text" x="5" y="10">ENGINEER STATUS: <tspan class="status-highlight">ONLINE</tspan></text>
+    <text class="status-text" x="5" y="28">SYS_FOCUS      : SOFTWARE/AI</text>
+    <text class="status-text" x="5" y="46">ACADEMIC_DOMAIN : ECE_SANDBOX</text>
+  </g>
+
+  <!-- Coordinates & Build Meta -->
+  <text class="tech-labels" x="48" y="130">LAT.37.77 / LNG.122.41</text>
+  <text class="tech-labels" x="430" y="130">SYS_BUILD_VER: 2.1.0-STABLE</text>
+
+</svg>
